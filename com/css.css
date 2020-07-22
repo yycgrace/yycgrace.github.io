@@ -1,0 +1,362 @@
+*{
+    offset: 0;
+    font-family: 'Noto Serif TC', serif;
+    /* font-family: '微軟正黑體'; */
+}
+
+body{
+    /* margin-top: px; */
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+section{
+    height: fit-content;
+    min-height: 100vh;
+    margin-right: 0;
+    padding-right: 0;
+    padding-top: 45px;
+    padding-bottom: 1px;
+}
+
+
+#mainnav{
+    position: fixed;
+    width: 100vw;
+    box-shadow: #bbb 0px 0px 10px;
+    display: flex;
+    flex-flow: row-reverse;
+    z-index: 999;
+}
+
+.mypic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.infotop{
+    max-width: 600px;
+    margin: auto;
+}
+
+#info_about{
+    color: #444;
+    background-color: #f1f1f192;
+    padding: 20px;
+    margin: 20px;
+}
+
+#info_name{
+    color: #444;
+}
+
+.maintitle{
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+.skill{
+    color: #f1f1f1;
+    text-shadow: #444 0 0 3px;
+    background: #218c74;
+    /* 背景混合模式 */
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.skitems img:hover,
+.circle-default-style:hover{
+    transform: scale(1.2);
+}
+
+.skitems>div{
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.skitems img{
+    border-radius: 15px;
+}
+
+.exp{
+    color: #444;
+    background: url("../imgs/expbg.jfif") , #f1f1f1d4;
+    /* 背景混合模式 */
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.expblock{
+    max-width: 500px;
+    height: fit-content;
+}
+
+.line{
+    width: 0.5px;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.edu{
+    color: #444;
+    background: #ffda79;
+    /* background-image: url(./2752810.eps); */
+    /* 背景混合模式 */
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+/* pofo */
+
+#pofoALL{
+    overflow: hidden;
+}
+
+#topinfo{
+    color: #ffda79;
+    width: 100vw;
+    height: 100vh;
+    background-color: #444;
+    padding: 50px;
+}
+
+#pofoexphp img:hover{
+    border-color: rgb(201,213,247);
+}
+#pofoexms img:hover{
+    border-color: rgb(0,81,94);
+}
+#pofoexcss img:hover{
+    border-color: blue;
+}
+#pofoexjs img:hover{
+    border-color: rgb(240,190,37);
+}
+#pofoexjq img:hover{
+    border-color: rgb(120,207,245);
+}
+#pofoexbs img:hover{
+    border-color: rgb(140,88,218);
+}
+#pofoexps img:hover{
+    border-color: rgb(118,200,218);
+}
+#pofoexai img:hover{
+    border-color: rgb(223,135,30);
+}
+
+#sc img:hover{
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    box-shadow: #f1f1f1af 0 0 10px;
+    animation: pofoex ease-in 0.4s;
+}
+@keyframes pofoex{
+    from{
+        box-shadow: #f1f1f1 0 0 0;
+        border-width: 0px;
+        border-color: transparent;
+    }
+}
+
+
+.lef,
+.mid,
+.rig{
+    color: #444;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.lef>div,
+.mid>div,
+.rig>div{
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+.lef>div::before,
+.mid>div::before,
+.rig>div::before{
+    content: "";
+    width: 300px;
+    height: 300vh;
+    position: absolute;
+    left: 40px;
+    top: 0;
+    border-left: 2px solid #218c75;
+}
+
+.lef h1, .mid h1, .rig h1{
+    position: relative;
+    top: -20px;
+    font-size: 4rem;
+    color: #f1f1f1;
+    text-shadow: #218c75 7px 5px 1px;
+    /* 如何讓字跟著外框縮放 */
+}
+
+.lef h1::before,
+.mid h1::before,
+.rig h1::before{
+    content: "";
+    position: absolute;
+    left: -50px;
+    width: 250px;
+    z-index: -1;
+    border-bottom: #218c75 solid 50px;
+}
+
+article h3{
+    text-align: center;
+    color: #218c75;
+}
+
+.piclink::before{
+    content: "";
+    position: absolute;
+    /* transform-origin: right; */
+    transform: scaleX(5);
+    top: -40px;
+    left: 15px;
+    z-index: -1;
+    height: 5rem;
+    border-left: #f1f1f190 1rem solid;
+}
+
+article h3::after{
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-top: 20px solid rgba(68, 68, 68, 0.211);
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    margin-left: 10px;
+    top: 10px;
+    z-index: -1;
+    animation: clickhere 0.8s ease-in-out infinite;
+}
+@keyframes clickhere{
+    to{
+        top:15px;
+    }
+}
+
+article{
+    margin-bottom: 70px;
+}
+
+.piclink{
+    width: 100%;
+    height: fit-content;
+    /* width: 300px;
+    height:200px; */
+    border-radius: 8px;
+    border: #444 solid 3px;
+    background-color: #99dddd99;
+    overflow: hidden;
+}
+
+.piclink>a>img{
+    width: 100%;
+}
+
+.skillbar{
+    width: 100%;
+    height: 16px;
+    border-radius: 5px;
+    border: #444 3px solid;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 6px; 
+    margin-bottom: 15px;
+    overflow: hidden;
+    display:flex;
+    color: #fff;
+    line-height: 2.5rem;
+}
+
+#scskillbar>div{
+    width: 100%;
+}
+
+.skillbar:hover{
+    animation: skibar ease-in-out 0.5s forwards;
+}
+@keyframes skibar{
+    to{height: 35px;}
+}
+
+.skillbar>div{
+    height: 100%;
+    z-index: -10;
+}
+
+.skillbar>.php,
+#scskillbar>.php{
+    background-color: rgb(201,213,247);
+}
+.skillbar>.ms,
+#scskillbar>.ms{
+    background-color: rgb(0,81,94);
+}
+.skillbar>.css,
+#scskillbar>.css{
+    background-color: blue;
+}
+.skillbar>.js,
+#scskillbar>.js{
+    background-color: rgb(240,190,37);
+}
+.skillbar>.jq,
+#scskillbar>.jq{
+    background-color: rgb(120,207,245);
+}
+.skillbar>.bs,
+#scskillbar>.bs{
+    background-color: rgb(140,88,218);
+}
+.skillbar>.ps,
+#scskillbar>.ps{
+    background-color: rgb(118,200,218);
+}
+.skillbar>.ai,
+#scskillbar>.ai{
+    background-color: rgb(223,135,30);
+}
+
+.dia{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    content: "php";
+}
+
+
+/* contect */
+#contect{
+    color: #444;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f1f1;
+    padding: 50px;
+}

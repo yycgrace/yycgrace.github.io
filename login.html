@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ya chiao yang</title>
+    <link rel="shortcut icon" href="./imgs/document.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./com/bootstrap.css">
+    <!-- <script src="https://kit.fontawesome.com/9661638eaf.js" crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+
+    <style>        
+        #container{
+            background-color: #222;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        #maze{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        p{
+            color: #f1f1f1;
+            font-size: 9vw;
+            width: 100%;
+        }
+
+        .inp{
+            padding: 10px;
+        }
+        .iip{
+            width: 180px;
+            color: darkgray;
+            background-color: #222;
+            border-top: transparent;
+            border-right: transparent;
+            border-left: transparent;
+            border-bottom: #555 solid 1px;
+        }
+
+        .frmzone{
+            text-align: center;
+            width: 200px;
+            margin: auto;
+            padding-bottom: 50px;
+        }
+
+        .rsbtn{
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .rsbtn>.btn{
+            width: 70px;
+            height: 30px;
+            margin-right: 0;
+            padding: 0;
+            border-radius: 15px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- action="./backend/admin.php" -->
+    <!-- <form  method="post" class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password" name="acc" id="acc">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password" name="pw" id="pw">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </form> -->
+    <!-- 登入用JS驗證? -->
+<div id="container">
+<p>猜猜輸入哪個才能登入</p>
+<div id="maze">
+
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password" id="acc">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password" id="pw">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="" onclick="goadmin()">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    <!-- no.8 -->
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    <!-- no.15 -->
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+<!-- no.22 -->
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+    
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+
+    <div class="row text-center frmzone">
+        <label for="acc" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <label for="pw" class="col-12 inp">
+            <input class="iip" type="password">
+        </label>
+        <div class="col-12 d-flex rsbtn">
+            <input class="btn btn-outline-success" type="submit" value="">
+            <input class="btn btn-outline-warning" type="reset" value="">
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</div>
+<script>
+    function goadmin(){
+        if(($("#acc").val() == "123") && ($("#pw").val() == "000")) $(location).attr('href',"./index.html");
+        else $(location).attr('href',"./login.html")
+    }
+</script>
+</body>
+</html>

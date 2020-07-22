@@ -1,0 +1,7 @@
+.foreground-circle{fill:none;stroke:#3498db}
+.foreground-circle-without-stroke-color{fill:none}
+.background-circle{fill:none;stroke:#ccc}
+.circle-text{font-family:Arial,sans-serif;fill:#fff;font-size:20px;transform: translate(0px, 25px);}
+.circle-container{overflow:visible}
+.point-circle{fill:#a3bbd0}
+.circle-icon.fa{font-size:30px;fill:#eee;transform: translate(0px, 25px);}

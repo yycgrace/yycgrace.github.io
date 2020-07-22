@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ya chiao yang</title>
+    <link rel="stylesheet" href="./com/bootstrap.css">
+    <link rel="stylesheet" href="./com/css.css">
+    <script src="https://kit.fontawesome.com/9661638eaf.js" crossorigin="anonymous"></script>
+    <!-- BS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            margin: 0!important;
+        }
+        #topinfo{
+            color: pink;
+            width: 100vw;
+            background-color: #ddd;
+        }
+        
+        .lef{
+            color: pink;
+            background-color: #222;
+        }
+        .mid{
+            color: pink;
+            background-color: #555;
+        }
+        .rig{
+            color: pink;
+            background-color: #999;
+        }
+
+        .lef h1, .mid h1, .rig h1{
+            position: relative;
+            left: -30px;
+            top: -10px;
+            font-size: 4rem;
+            /* 如何讓字跟著外框縮放 */
+        }
+
+        article h3{
+            writing-mode: vertical-lr;
+        }
+
+        .piclink{
+            width: 350px;
+            height:200px;
+            border-radius: 8px;
+            border: #ffffff55 solid 5px;
+            background-color: #99dddd99;
+            overflow: hidden;
+            /* 邊界與背景中間可以用padding留白嗎 */
+            /* padding: 3px!important ; */
+            /* background-color: transparent; */
+        }
+
+        .skillbar{
+            width: 350px;
+            height: 15px;
+            border-radius: 5px;
+            /* border: pink 1px solid; */
+            background-color: #ffffff55;
+            margin-top: 6px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body class="d-flex row">
+<div id="pofoALL"  class="d-flex row">
+<section class="col-12" id="topinfo">
+        <h1>PORTFOLIO</h1>
+
+        <div class="infotop flex-column py-5">
+            <div class="d-flex flex-row">
+                <div class="py-4 pr-2">
+                    <h5 class="chginput infochginput" id="pomain_1">Back-end / Front-end / Others</h5>
+                    <p class="chginput infochginput" id="pomain_2">
+                        依照運用技能的比重，分為後端、前端及其他
+                        其他多為平面及視覺作品
+                        (多為綜合運用，下方以顏色標示使用技能之比例)
+                    </p>
+                </div>
+            </div>
+            <div class="pr-5 py-4">
+                <p class="chginput infochginput" id="pomain_3">php html css javascript</p>
+            </div>
+        </div>
+
+</section>
+
+    <section class="lef col-md-4 col-12">
+    <div class="container">
+        <h1 class="pb-5">BACK</h1>
+
+
+        
+                <article class="row pb-4">
+            <div class="col-lg-2 col-12"><h3>萬年曆</h3></div>
+            <div class="col-lg-10 col-12">
+                <div class="piclink">
+                    <a href="http://220.128.133.15/s1090214/01_calendar/"><img src="./imgs/pofoscrns/calendar.PNG" alt=""></a>
+                </div>
+                <div class="skillbar"></div>
+                <p class="w-75">calendar with bootstrap</p>
+            </div>
+        </article>
+                <article class="row pb-4">
+            <div class="col-lg-2 col-12"><h3>invoice lottory</h3></div>
+            <div class="col-lg-10 col-12">
+                <div class="piclink">
+                    <a href="http://220.128.133.15/s1090214/03_invoice/"><img src="./imgs/pofoscrns/invoice.PNG" alt=""></a>
+                </div>
+                <div class="skillbar"></div>
+                <p class="w-75">invoice lotto with database mysql</p>
+            </div>
+        </article>
+        
+
+
+    </div>
+    </section>
+    <section class="mid col-md-4 col-12">
+    <div class="container">
+        <h1 class="pb-5">FRONT</h1>
+
+
+
+                <article class="row pb-4">
+            <div class="col-lg-2 col-12"><h3>度假網站</h3></div>
+            <div class="col-lg-10 col-12">
+                <div class="piclink">
+                    <a href="http://220.128.133.15/s1090214/11_bsdemo_resort-hotel%e6%b8%a1%e5%81%87%e9%a3%af%e5%ba%97/"><img src="./imgs/pofoscrns/resort.PNG" alt=""></a>
+                </div>
+                <div class="skillbar"></div>
+                <p class="w-75">resort brand webpage with bootstrap</p>
+            </div>
+        </article>
+                <article class="row pb-4">
+            <div class="col-lg-2 col-12"><h3>logic game</h3></div>
+            <div class="col-lg-10 col-12">
+                <div class="piclink">
+                    <a href=""><img src="./imgs/pofoscrns/logicgame.PNG" alt=""></a>
+                </div>
+                <div class="skillbar"></div>
+                <p class="w-75">logic game with jquery UI dialog</p>
+            </div>
+        </article>
+                <article class="row pb-4">
+            <div class="col-lg-2 col-12"><h3>color picker</h3></div>
+            <div class="col-lg-10 col-12">
+                <div class="piclink">
+                    <a href=""><img src="./imgs/pofoscrns/colorpicker.PNG" alt=""></a>
+                </div>
+                <div class="skillbar"></div>
+                <p class="w-75">color picker with javascript/jQuery</p>
+            </div>
+        </article>
+        
+
+
+        <article class="row pb-4">
+            <div class="col-lg-2 col-12"><h3>ti</h3></div>
+            <div class="col-lg-10 col-12">
+                <div class="piclink"></div>
+                <div class="skillbar"></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi amet explicabo eaque quo repudiandae pariatur.</p>
+            </div>
+        </article>
+
+
+
+    </div>
+    </section>
+    <section class="rig col-md-4 col-12">
+    <div class="container">
+        <h1 class="pb-5">OTHER</h1>
+
+
+
+
+                <article class="row pb-4">
+            <div class="col-lg-2 col-12"><h3>海報練習</h3></div>
+            <div class="col-lg-10 col-12">
+                <div class="piclink">
+                    <a href=""><img src="./imgs/pofoscrns/" alt=""></a>
+                </div>
+                <div class="skillbar"></div>
+                <p class="w-75"></p>
+            </div>
+        </article>
+        
+
+
+
+        <article class="row pb-4">
+            <div class="col-lg-2 col-12"><h3>ti</h3></div>
+            <div class="col-lg-10 col-12">
+                <div class="piclink"></div>
+                <div class="skillbar"></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi amet explicabo eaque quo repudiandae pariatur.</p>
+            </div>
+        </article>
+        <article class="row pb-4">
+            <div class="col-lg-2 col-12"><h3>ti</h3></div>
+            <div class="col-lg-10 col-12">
+                <div class="piclink"></div>
+                <div class="skillbar"></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi amet explicabo eaque quo repudiandae pariatur.</p>
+            </div>
+        </article>
+
+        
+    </div>
+    </section>
+</div>
+</body>
+</html>
+

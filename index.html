@@ -3,9 +3,785 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>grace's page</title>
+    <title>ya chiao yang</title>
+    <link rel="shortcut icon" href="./imgs/document.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./com/bootstrap.css">
+    <link rel="stylesheet" href="./com/css.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/9661638eaf.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- jq newset -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- circliful -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./com/circliful/main.css" rel="stylesheet">
+    <script type="text/javascript" src="./com/circliful/circliful.js"></script>
 </head>
-<body>
-    this is grace
+<body style="background-color: #ffda79;">
+    <header>
+
+<!-- <i class="far fa-folder-open"></i> -->
+
+<nav id="mainnav" class="navbar navbar-expand-md navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fas fa-laptop-code"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" id="tomain" href="#info">about<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="toportfolio" href="#exp">experience</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="toportfolio" href="#edu">education</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="toportfolio" href="#pofoALL">portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="tocontect" href="#contect">contect</a>
+        </li>
+        </ul>
+    </div>
+</nav>
+</header>
+
+
+<section class="info" id="info">
+    <div style="width: 100vw;height:100vh;overflow-x: hidden;overflow-y: hidden;position: absolute;">
+        <div style="position: absolute;left: 0;top: 0; width: 500px;height:900px; border-top: 0px;border-right: 100vw solid #f1f1f1; border-bottom:solid 900px #218c74;border-left: 0;z-index: -5;"></div>
+        <div style="position: absolute;right: 0;top: 0; width: 700px;height:900px; border-top: 0px;border-left: 800px solid transparent; border-bottom:solid 600px #ffda79;border-right: 0;z-index: -5;"></div>
+    </div>
+    <div class="container">
+        <h1 class="maintitle chginput infochginput mt-5" id="info_name">Ya Chiao Yang 楊雅喬</h1>
+        <div class="infotop flex-column py-5">
+            <div class="d-flex flex-row">
+                <div class="mr-4">
+                    <div id="mypic" class="mypic text-center">
+                        <a id="mypicbtn" style="display:none;line-height:150px;" href="./backend/info_photo.html">change</a>
+                        <img width="150px" height="150px" src="./imgs/uploads/photo3.png" alt="">
+                    </div>
+                </div>
+                <div class="py-4 pr-2">
+                    <h5 class="chginput infochginput" id="info_title">Web Design Learner<br><small> / 網頁設計 / 前端 / 後端 / UI設計</small></h5>
+                    <p class="chginput infochginput" id="info_city">Taipei , Taiwan</p>
+                </div>
+            </div>
+            <div class="pr-5 py-4">
+                <p class="chginput infochginput" id="info_about">(我是範例內文)Energetic Adobe Certified Expert (ACE) web designer with 6+ years of experience. Seeking to enhance design excellence at Dujo International. Designed 5 responsive websites per month for Amphimia Global with 99% client satisfaction. Raised UX scores by 35% and customer retention by 18%. Received AWWWARDS prize 2015.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="skill">
+    <div class="container">
+        <article>
+            <h1 class="maintitle">skill</h1>
+            <div class="skitems d-flex flex-wrap">
+                                <div draggble="true" data-index="1">
+                    <img width="80px" height="80px" src="./imgs/skill/html.png" alt="">
+                    <p>html</p>
+                </div>
+                                <div draggble="true" data-index="2">
+                    <img width="80px" height="80px" src="./imgs/skill/css.png" alt="">
+                    <p>css</p>
+                </div>
+                                <div draggble="true" data-index="3">
+                    <img width="80px" height="80px" src="./imgs/skill/javascript.png" alt="">
+                    <p>javascript</p>
+                </div>
+                                <div draggble="true" data-index="4">
+                    <img width="80px" height="80px" src="./imgs/skill/php.png" alt="">
+                    <p>php</p>
+                </div>
+                            </div>
+        </article>
+
+
+
+        <article class="">
+            <h1 class="maintitle text-right">design</h1>
+            <div class="skitems d-flex flex-wrap justify-content-end">
+                                <div draggble="true" data-index="1">
+                    <img width="80px" height="80px" src="./imgs/skill/photoshop.png" alt="">
+                    <p>photoshop</p>
+                </div>
+                                <div draggble="true" data-index="2">
+                    <img width="80px" height="80px" src="./imgs/skill/illustrator.png" alt="">
+                    <p>illustrator</p>
+                </div>
+                                <div draggble="true" data-index="3">
+                    <img width="80px" height="80px" src="./imgs/skill/indesign.png" alt="">
+                    <p>indesign</p>
+                </div>
+                                <div draggble="true" data-index="4">
+                    <img width="80px" height="80px" src="./imgs/skill/autocad.png" alt="">
+                    <p>autocad</p>
+                </div>
+                                <div draggble="true" data-index="5">
+                    <img width="80px" height="80px" src="./imgs/skill/sketchup.png" alt="">
+                    <p>SketchUp</p>
+                </div>
+                            </div>
+        </article>
+
+
+
+        <article>
+            <h1 class="maintitle">expertize<span style="font-size:0.8rem;padding-left:30px;"><a href="./imgs/1111人力銀行職能測驗.pdf" target="_blank" style="color:#ffda79">soruce from</a></span></h1>
+            <div class="skitems d-flex flex-wrap">
+                                <div draggble="true" data-index="1">
+                    <div id="circle_exp01" class="circle-default-style" style="width: 90px;height: 90px;"></div>
+                    
+                    <script>
+                        const circle_exp01 = circliful.newCircle({
+                        percent: 100,
+                        id: 'circle_exp01',
+                        strokeGradient: ["#05a", "#0a5"],
+                        type: 'simple',
+                        icon: 'f0e7',
+                        backgroundCircleWidth: 15,
+                        foregroundCircleWidth: 10,
+                        strokeLinecap: "round",
+                        type: 'animation', value: true,
+                        });
+                    </script>
+                    <!--  -->
+                    <p>抗壓能力</p>
+                </div>
+                                <div draggble="true" data-index="2">
+                    <div id="circle_exp02" class="circle-default-style" style="width: 90px;height: 90px;"></div>
+                    
+                    <script>
+                        const circle_exp02 = circliful.newCircle({
+                        percent: 94,
+                        id: 'circle_exp02',
+                        strokeGradient: ["#05a", "#0a5"],
+                        type: 'simple',
+                        icon: 'f0e7',
+                        backgroundCircleWidth: 15,
+                        foregroundCircleWidth: 10,
+                        strokeLinecap: "round",
+                        type: 'animation', value: true,
+                        });
+                    </script>
+                    <!--  -->
+                    <p>分析思考</p>
+                </div>
+                                <div draggble="true" data-index="3">
+                    <div id="circle_exp03" class="circle-default-style" style="width: 90px;height: 90px;"></div>
+                    
+                    <script>
+                        const circle_exp03 = circliful.newCircle({
+                        percent: 94,
+                        id: 'circle_exp03',
+                        strokeGradient: ["#05a", "#0a5"],
+                        type: 'simple',
+                        icon: 'f0e7',
+                        backgroundCircleWidth: 15,
+                        foregroundCircleWidth: 10,
+                        strokeLinecap: "round",
+                        type: 'animation', value: true,
+                        });
+                    </script>
+                    <!--  -->
+                    <p>正向樂觀</p>
+                </div>
+                                <div draggble="true" data-index="4">
+                    <div id="circle_exp04" class="circle-default-style" style="width: 90px;height: 90px;"></div>
+                    
+                    <script>
+                        const circle_exp04 = circliful.newCircle({
+                        percent: 88,
+                        id: 'circle_exp04',
+                        strokeGradient: ["#05a", "#0a5"],
+                        type: 'simple',
+                        icon: 'f0e7',
+                        backgroundCircleWidth: 15,
+                        foregroundCircleWidth: 10,
+                        strokeLinecap: "round",
+                        type: 'animation', value: true,
+                        });
+                    </script>
+                    <!--  -->
+                    <p>自我提升</p>
+                </div>
+                                <div draggble="true" data-index="5">
+
+                    <div id="circle_exp05" class="circle-default-style" style="width: 90px;height: 90px;"></div>
+                    
+                    <script>
+                        const circle_exp05 = circliful.newCircle({
+                        percent: 88,
+                        id: 'circle_exp05',
+                        strokeGradient: ["#05a", "#0a5"],
+                        type: 'simple',
+                        icon: 'f0e7',
+                        backgroundCircleWidth: 15,
+                        foregroundCircleWidth: 10,
+                        strokeLinecap: "round",
+                        type: 'animation', value: true,
+                        });
+                    </script>
+                    <!--  -->
+                    <p>顧客關係</p>
+                </div>
+                                <div draggble="true" data-index="6">
+                    <div id="circle_exp06" class="circle-default-style" style="width: 90px;height: 90px;"></div>
+                    
+                    <script>
+                        const circle_exp06 = circliful.newCircle({
+                        percent: 81,
+                        id: 'circle_exp06',
+                        strokeGradient: ["#05a", "#0a5"],
+                        type: 'simple',
+                        icon: 'f0e7',
+                        backgroundCircleWidth: 15,
+                        foregroundCircleWidth: 10,
+                        strokeLinecap: "round",
+                        type: 'animation', value: true,
+                        });
+                    </script>
+                    <!--  -->
+                    <p>溝通協調</p>
+                </div>
+                                <div draggble="true" data-index="7">
+                    <div id="circle_exp07" class="circle-default-style" style="width: 90px;height: 90px;"></div>
+                    
+                    <script>
+                        const circle_exp07 = circliful.newCircle({
+                        percent: 75,
+                        id: 'circle_exp07',
+                        strokeGradient: ["#05a", "#0a5"],
+                        type: 'simple',
+                        icon: 'f0e7',
+                        backgroundCircleWidth: 15,
+                        foregroundCircleWidth: 10,
+                        strokeLinecap: "round",
+                        type: 'animation', value: true,
+                        });
+                    </script>
+                    <!--  -->
+                    <p>同理關懷</p>
+                </div>
+                                <div draggble="true" data-index="8">
+                    <div id="circle_exp08" class="circle-default-style" style="width: 90px;height: 90px;"></div>
+                    
+                    <script>
+                        const circle_exp08 = circliful.newCircle({
+                        percent: 88,
+                        id: 'circle_exp08',
+                        strokeGradient: ["#05a", "#0a5"],
+                        type: 'simple',
+                        icon: 'f0e7',
+                        backgroundCircleWidth: 15,
+                        foregroundCircleWidth: 10,
+                        strokeLinecap: "round",
+                        type: 'animation', value: true,
+                        });
+                    </script>
+                    <!--  -->
+                    <p>適應能力</p>
+                </div>
+                                <div draggble="true" data-index="9">
+                    <div id="circle_exp09" class="circle-default-style" style="width: 90px;height: 90px;"></div>
+                    
+                    <script>
+                        const circle_exp09 = circliful.newCircle({
+                        percent: 88,
+                        id: 'circle_exp09',
+                        strokeGradient: ["#05a", "#0a5"],
+                        type: 'simple',
+                        icon: 'f0e7',
+                        backgroundCircleWidth: 15,
+                        foregroundCircleWidth: 10,
+                        strokeLinecap: "round",
+                        type: 'animation', value: true,
+                        });
+                    </script>
+                    <!--  -->
+                    <p>工作控管</p>
+                </div>
+                                <div draggble="true" data-index="10">
+                    <div id="circle_exp10" class="circle-default-style" style="width: 90px;height: 90px;"></div>
+                    
+                    <script>
+                        const circle_exp10 = circliful.newCircle({
+                        percent: 75,
+                        id: 'circle_exp10',
+                        strokeGradient: ["#05a", "#0a5"],
+                        type: 'simple',
+                        icon: 'f0e7',
+                        backgroundCircleWidth: 15,
+                        foregroundCircleWidth: 10,
+                        strokeLinecap: "round",
+                        type: 'animation', value: true,
+                        });
+                    </script>
+                    <!--  -->
+                    <p>創造能力</p>
+                </div>
+                                
+            </div>
+
+
+
+
+        </article>
+
+
+        <article>
+            <h1 class="maintitle text-right">language</h1>
+            <div class="skitems d-flex flex-wrap justify-content-end">
+                                <div draggble="true" data-index="0">
+                    <img width="80px" height="80px" src="./imgs/skill/" alt="">
+                    <p>Chinese(Mandarin)</p>
+                </div>
+                                <div draggble="true" data-index="0">
+                    <img width="80px" height="80px" src="./imgs/skill/" alt="">
+                    <p>English</p>
+                </div>
+                                <div draggble="true" data-index="0">
+                    <img width="80px" height="80px" src="./imgs/skill/" alt="">
+                    <p>Taiwanese</p>
+                </div>
+                            </div>
+        </article>
+
+
+    </div>
+    </section>
+<section class="exp" id="exp">
+    <div class="container">
+        <h1 class="maintitle">Experience</h1>
+        <div class="d-flex flex-column flex-md-wrap flex-nowrap" style="max-height:1500px">
+
+        
+            <div class="expblock mb-4 pr-5 d-flex flex-row">
+                <div class="timeline d-flex flex-column align-items-center pr-3">
+                    <p class="chginput expchginput text-secondary" id="設計工作室_year">2019</p>
+                    <i class="far fa-circle text-secondary small"></i>
+                    <div class="line bg-secondary"></div>
+                </div>
+                <div class="pt-4">
+                    <h5 class="chginput expchginput py-2" id="設計工作室_title">專案企劃</h5>
+                    <p class="chginput expchginput" id="設計工作室_id">竹冶聯合設計工作室</p>
+                    <p class="chginput expchginput" id="設計工作室_period">2019/4-2019/10</p>
+                    <p class="chginput expchginput" id="設計工作室_event">
+                        1. 新竹縣關西鎮小招牌改造計畫<br>
+                        2. 湖口鄉裝甲新村-歷史建築景觀美化案<br>
+                        3. 湖口鄉裝甲新村活化企劃及史料紀錄<br>
+                        4. 新竹縣縣史館年度活動企劃
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="expblock mb-4 pr-5 d-flex flex-row">
+                <div class="timeline d-flex flex-column align-items-center pr-3">
+                    <p class="chginput expchginput text-secondary" id="MOUNT BULLER CHALET HOTEL_year">2018</p>
+                    <i class="far fa-circle text-secondary small"></i>
+                    <div class="line bg-secondary"></div>
+                </div>
+                <div class="pt-4">
+                    <h5 class="chginput expchginput py-2" id="MOUNT BULLER CHALET HOTEL_title">Supervisor(FullTime)</h5>
+                    <p class="chginput expchginput" id="MOUNT BULLER CHALET HOTEL_id">MOUNT BULLER CHALET HOTEL</p>
+                    <p class="chginput expchginput" id="MOUNT BULLER CHALET HOTEL_period">2018/06-2018/11</p>
+                    <p class="chginput expchginput" id="MOUNT BULLER CHALET HOTEL_event">Housekeeping/Public Area Cleaning</p>
+                </div>
+            </div>
+
+
+        
+                <div class="expblock mb-4 pr-5 d-flex flex-row">
+                    <div class="timeline d-flex flex-column align-items-center pr-3">
+                        <p class="chginput expchginput text-secondary" id="ECOF SERVICE Pty Ltd_year">2017</p>
+                        <i class="far fa-circle text-secondary small"></i>
+                        <div class="line bg-secondary"></div>
+                    </div>
+                    <div class="pt-4">
+                        <h5 class="chginput expchginput py-2" id="ECOF SERVICE Pty Ltd_title">Supervisor(FullTime)</h5>
+                        <p class="chginput expchginput" id="ECOF SERVICE Pty Ltd_id">ECOF SERVICE Pty Ltd</p>
+                        <p class="chginput expchginput" id="ECOF SERVICE Pty Ltd_period">2017/06-2017/12</p>
+                        <p class="chginput expchginput" id="ECOF SERVICE Pty Ltd_event">Entry Scanning/Entry/Picking Goods/Packing/Cushion</p>
+                    </div>
+                </div>
+
+        
+                <div class="expblock mb-4 pr-5 d-flex flex-row">
+                    <div class="timeline d-flex flex-column align-items-center pr-3">
+                        <p class="chginput expchginput text-secondary" id="SUNCHENG INTERIOR DESIGN_year">2016</p>
+                        <i class="far fa-circle text-secondary small"></i>
+                        <div class="line bg-secondary"></div>
+                    </div>
+                    <div class="pt-4">
+                        <h5 class="chginput expchginput py-2" id="SUNCHENG INTERIOR DESIGN_title">設計助理</h5>
+                        <p class="chginput expchginput" id="SUNCHENG INTERIOR DESIGN_id">尚澄室內設計</p>
+                        <p class="chginput expchginput" id="SUNCHENG INTERIOR DESIGN_period">2016/08-2017/03</p>
+                        <p class="chginput expchginput" id="SUNCHENG INTERIOR DESIGN_event">
+                            1. 工務監工<br>
+                            2. 圖面繪製<br>
+                            3. 資料庫系統化
+                        </p>
+                    </div>
+                </div>
+
+        
+
+
+        
+                <div class="expblock mb-4 pr-5 d-flex flex-row">
+                    <div class="timeline d-flex flex-column align-items-center pr-3">
+                        <p class="chginput expchginput text-secondary" id="ZORBA HOUSE(BRUNCH)_year">2014</p>
+                        <i class="far fa-circle text-secondary small"></i>
+                        <div class="line bg-secondary"></div>
+                    </div>
+                    <div class="pt-4">
+                        <h5 class="chginput expchginput py-2" id="ZORBA HOUSE(BRUNCH)_title">景觀/規劃設計 實習生</h5>
+                        <p class="chginput expchginput" id="ZORBA HOUSE(BRUNCH)_id">象設計集團</p>
+                        <p class="chginput expchginput" id="ZORBA HOUSE(BRUNCH)_period">2014/07-2014/08</p>
+                        <p class="chginput expchginput" id="ZORBA HOUSE(BRUNCH)_event">
+                            1. 圖面繪製<br>
+                            2. 模型製作
+                        </p>
+                    </div>
+                </div>
+
+
+        </div>
+    </div>
+    </section>
+
+<section class="edu" id="edu">
+    <div class="container">
+        <h1 class="maintitle">Education</h1>
+
+                <div class="edublock mb-4 d-flex flex-row">
+            <div class="timeline d-flex flex-column align-items-center pr-3">
+                <p class="chginput expchginput text-secondary" id="Tunghai University, Taichung, _year">2017</p>
+                <i class="far fa-circle text-secondary small"></i>
+                <div class="line bg-secondary"></div>
+            </div>
+            <div class="pt-4">
+                <h5 class="chginput expchginput py-2" id="Tunghai University, Taichung, _id">Tunghai University, Taichung, </h5>
+                <span class="chginput expchginput" id="Tunghai University, Taichung, _period">2012-2017</span>
+                <span class="chginput expchginput" id="Tunghai University, Taichung, _title">B.L.A., Landscape Architecture</span>
+                <p class="chginput expchginput" id="Tunghai University, Taichung, _event">
+                    1. 應屆東海景觀學系畢業展覽 — 總召集人<br>
+                    2. 首屆跨視界 (全國景觀學系十校聯展) — 活動組<br>
+                    3. 中華橋梁美學營 — 名次<br>
+                    4. 昇陽建築精磚獎 — 季軍
+                </p>
+            </div>
+        </div>
+                <div class="edublock mb-4 d-flex flex-row">
+            <div class="timeline d-flex flex-column align-items-center pr-3">
+                <p class="chginput expchginput text-secondary" id="新港藝術高中_year">2010</p>
+                <i class="far fa-circle text-secondary small"></i>
+                <div class="line bg-secondary"></div>
+            </div>
+            <div class="pt-4">
+                <h5 class="chginput expchginput py-2" id="新港藝術高中_id">新港藝術高中</h5>
+                <span class="chginput expchginput" id="新港藝術高中_period">2007-2010</span>
+                <span class="chginput expchginput" id="新港藝術高中_title">不分組</span>
+                <p class="chginput expchginput" id="新港藝術高中_event">
+                    1. 畢業演出美術組 — 舞台策劃及佈展<br>
+                    2. 參訪
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+<div id="pofoALL" class="d-flex row">
+    <section class="" id="topinfo">
+            <h1 class="pt-5">PORTFOLIO</h1>
+            <div class="infotop flex-column py-5">
+                <div class="d-flex flex-row">
+                    <div class="py-4 pr-2">
+                        <h5 class="chginput infochginput" id="pomain_1">Back-end / Front-end / Others</h5>
+                        <p class="chginput infochginput" id="pomain_2">
+                            依照運用技能的比重，分為後端、前端及其他
+                            其他多為平面及視覺作品
+                            (多為綜合運用，下方以顏色標示使用技能之比例)
+                        </p>
+                    </div>
+                </div>
+
+                <div id="sc" class="py-0">
+
+                    <div class="skitems d-flex flex-wrap">
+                        <div id="pofoexphp">
+                            <img width="80px" height="80px" src="./imgs/skill/php.png" alt="php">
+                        </div>
+                        <div id="pofoexms">
+                            <img width="80px" height="80px" src="./imgs/skill/mysql.png" alt="php">
+                        </div>
+                        <div id="pofoexcss">
+                            <img width="80px" height="80px" src="./imgs/skill/css.png" alt="php">
+                        </div>
+                        <div id="pofoexjs">
+                            <img width="80px" height="80px" src="./imgs/skill/javascript.png" alt="javascript">
+                        </div>
+                        <div id="pofoexjq">
+                            <img width="80px" height="80px" src="./imgs/skill/jquery.png" alt="css">
+                        </div>
+                        <div id="pofoexbs">
+                            <img width="80px" height="80px" src="./imgs/skill/bootstrap.png" alt="javascript">
+                        </div>
+
+                        <div id="pofoexps">
+                            <img width="80px" height="80px" src="./imgs/skill/photoshop.png" alt="php">
+                        </div>
+                        <div id="pofoexai">
+                            <img width="80px" height="80px" src="./imgs/skill/illustrator.png" alt="css">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+    
+    </section>
+    
+    <section class="lef col-md-4 col-12">
+        <div class="container">
+            <article class="row pb-4">
+                <h1 class="pb-5">BACK</h1>
+                <div class="col-lg-10 col-12"><h3>萬年曆</h3></div>
+                <div class="col-lg-10 col-12">
+                    <div class="piclink">
+                        <a href="http://220.128.133.15/s1090214/01_calendar/"><img src="./imgs/pofoscrns/calendar.PNG" alt=""></a>
+                    </div>
+                    <div class="skillbar">
+                        <div class="php" style="width: 50%;">50</div>
+                        <div class="ms" style="width: 20%;">20</div>
+                        <div class="css" style="width: 5%;">5</div>
+                        <div class="bs" style="width: 25%;">25</div>
+                    </div>
+
+                    <p>calendar with bootstrap</p>
+                </div>
+            </article>
+
+            <article class="row pb-4">
+                <div class="col-lg-10 col-12"><h3>invoice lottory</h3></div>
+                <div class="col-lg-10 col-12">
+                    <div class="piclink">
+                        <a href="http://220.128.133.15/s1090214/03_invoice/"><img src="./imgs/pofoscrns/invoice.PNG" alt=""></a>
+                    </div>
+                    <div class="skillbar">
+                        <div class="php" style="width: 50%;">50</div>
+                        <div class="ms" style="width: 15%;">15</div>
+                        <div class="css" style="width: 30%;">30</div>
+                        <div class="bs" style="width: 10%;">10</div>
+                        <div class="ai" style="width: 5%;">5</div>
+                    </div>
+                    <p>invoice lotto with database mysql</p>
+                </div>
+            </article>
+
+            <article class="row pb-4">
+                <div class="col-lg-10 col-12"><h3>串接API</h3></div>
+                <div class="col-lg-10 col-12">
+                    <div class="piclink">
+                        <a href="http://220.128.133.15/s1090214/03_invoice/"><img src="./imgs/pofoscrns/invoice.PNG" alt=""></a>
+                    </div>
+                    <div class="skillbar">
+                        <div class="php" style="width: 50%;">50</div>
+                        <div class="bs" style="width: 10%;">10</div>
+                        <div class="js" style="width: 20%;">20</div>
+                    </div>
+                    <p>API練習</p>
+                </div>
+            </article>
+
+            <article class="row pb-4">
+                <div class="col-lg-10 col-12"><h3>個人履歷後台系統</h3></div>
+                <div class="col-lg-10 col-12">
+                    <div class="piclink">
+                        <a href="http://220.128.133.15/s1090214/03_invoice/"><img src="./imgs/pofoscrns/invoice.PNG" alt=""></a>
+                    </div>
+                    <div class="skillbar">
+                        <div class="php" style="width: 25%;">25</div>
+                        <div class="ms" style="width: 5%;">5</div>
+                        <div class="css" style="width: 15%;">15</div>
+                        <div class="js" style="width: 20%;">20</div>
+                        <div class="jq" style="width: 20%;">20</div>
+                        <div class="bs" style="width: 15%;">15</div>
+                    </div>
+                    <p>履歷後台</p>
+                </div>
+            </article>
+            
+    
+        </div>
+    </section>
+    <section class="mid col-md-4 col-12">
+        <div class="container">
+            <article class="row pb-4">
+                <h1 class="pb-5">FRONT</h1>
+                <div class="col-lg-10 col-12"><h3>渡假飯店官網</h3></div>
+                <div class="col-lg-10 col-12">
+                    <div class="piclink">
+                        <a href="http://220.128.133.15/s1090214/11_bsdemo_resort-hotel%e6%b8%a1%e5%81%87%e9%a3%af%e5%ba%97/"><img src="./imgs/pofoscrns/resort.PNG" alt=""></a>
+                    </div>
+                    <div class="skillbar">
+                        <div class="css" style="width: 20%;">20</div>
+                        <div class="bs" style="width: 80%;">80</div>
+                    </div>
+                    <p>resort brand webpage with bootstrap 使用bootstrap製作一頁式網頁設計</p>
+                </div>
+            </article>
+                    <article class="row pb-4">
+                <div class="col-lg-10 col-12"><h3>logic game 答題小遊戲</h3></div>
+                <div class="col-lg-10 col-12">
+                    <div class="piclink">
+                        <a href=""><img src="./imgs/pofoscrns/logicgame.PNG" alt=""></a>
+                    </div>
+                    <div class="skillbar">
+                        <div class="css" style="width: 5%;">5</div>
+                        <div class="js" style="width: 10%;">10</div>
+                        <div class="jq" style="width: 80%;">80</div>
+                        <div class="ps" style="width: 5%;">5</div>
+                    </div>
+                    <p>logic game with jquery UI dialog 對話框及流程設計，利用Jquery UI自訂對話框</p>
+                </div>
+            </article>
+                    <article class="row pb-4">
+                <div class="col-lg-10 col-12"><h3>color picker 色票挑選器</h3></div>
+                <div class="col-lg-10 col-12">
+                    <div class="piclink">
+                        <a href=""><img src="./imgs/pofoscrns/colorpicker.PNG" alt=""></a>
+                    </div>
+                    <div class="skillbar">
+                        <div class="js" style="width: 80%;">80</div>
+                        <div class="jq" style="width: 20%;">20</div>
+                    </div>
+                    <p>color picker with javascript/jQuery 以javascript/jquery動態顯示當前選取色票，並依照需求輸入及修改數值</p>
+                </div>
+            </article>
+            
+    
+    
+            <article class="row pb-4">
+                <div class="col-lg-10 col-12"><h3>How OLD r u?</h3></div>
+                <div class="col-lg-10 col-12">
+                    <div class="piclink">
+                        <a href=""><img src="./imgs/pofoscrns/colorpicker.PNG" alt=""></a>
+                    </div>
+                    <div class="skillbar">
+                        <div class="js" style="width: 30%;">30</div>
+                        <div class="jq" style="width: 60%;">60</div>
+                        <div class="ai" style="width: 10%;">10</div>
+                    </div>
+                    <p>輸入生日後計算年齡，並以小數點表示時間流逝，配合CSS設計動態背景</p>
+                </div>
+            </article>
+    
+    
+    
+        </div>
+        </section>
+        <section class="rig col-md-4 col-12">
+        <div class="container">
+            <article class="row pb-4">
+                <h1 class="pb-5">OTHER</h1>
+                <div class="col-lg-10 col-12"><h3>30 animals</h3></div>
+                <div class="col-lg-10 col-12">
+                    <div class="piclink">
+                        <a href=""><img src="./imgs/pofoscrns/colorpicker.PNG" alt=""></a>
+                    </div>
+                    <div class="skillbar">
+                        <div class="css" style="width: 5%;">5</div>
+                        <div class="jq" style="width: 10%;">10</div>
+                        <div class="bs" style="width: 5%;">5</div>
+                        <div class="ai" style="width: 80%;">80</div>
+                    </div>
+                    <p>參考30 days animals資源挑戰，以illustrator繪製，並展示思考流程</p>
+                </div>
+            </article>
+
+            <article class="row pb-4">
+                <div class="col-lg-10 col-12"><h3>平面作品集合</h3></div>
+                <div class="col-lg-10 col-12">
+                    <div class="piclink">
+                        <a href=""><img src="./imgs/pofoscrns/colorpicker.PNG" alt=""></a>
+                    </div>
+                    <div class="skillbar">
+                        <div class="ps" style="width: 30%;">30</div>
+                        <div class="ai" style="width: 70%;">70</div>
+                    </div>
+                    <p>宣傳品及海報等</p>
+                </div>
+            </article>
+
+            <article class="row pb-4">
+                <div class="col-lg-10 col-12"><h3>100days UI Daily</h3></div>
+                <div class="col-lg-10 col-12">
+                    <div class="piclink">
+                        <a href=""><img src="./imgs/pofoscrns/colorpicker.PNG" alt=""></a>
+                    </div>
+                    <div class="skillbar">
+                        <div class="ps" style="width: 10%;">10</div>
+                        <div class="ai" style="width: 90%;">90</div>
+                        <!-- figma -->
+                    </div>
+                    <p>參考UI Daily 100 days資源挑戰，以figma繪製</p>
+                </div>
+            </article>
+    
+            <article class="row pb-4">
+                <div class="col-lg-10 col-12"><h3>LOGO 個人品牌視覺設計</h3></div>
+                <div class="col-lg-10 col-12">
+                    <div class="piclink">
+                        <a href=""><img src="./imgs/pofoscrns/colorpicker.PNG" alt=""></a>
+                    </div>
+                    <div class="skillbar">
+                        <div class="ps" style="width: 30%;">30</div>
+                        <div class="ai" style="width: 70%;">70</div>
+                    </div>
+                    <p>以個人品牌為基礎，涵蓋logo/CI/標準規範設計</p>
+                </div>
+            </article>
+
+        </div>
+        </section>
+    </div>
+
+
+
+
+
+<section class="" id="contect">
+    <h1 class="pt-5">CONTECT ME</h1>
+    <div class="py-5">
+        <div>email</div>
+        <div>cakeresume</div>
+        <div>github</div>
+        <div>driiible</div>
+        <div>linkdin</div>
+    </div>
+
+    <a href="./login.html" class="btn btn-outline-secondary float-right" id="login" style="font-size:0.5rem;">admin</a>
+    
+
+</section>
+
 </body>
 </html>
+
